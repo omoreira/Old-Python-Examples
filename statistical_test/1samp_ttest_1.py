@@ -23,7 +23,7 @@ for i in range(3):
 	t,p=stats.ttest_1samp(data['VIQ'], NH[i])
 	print 'one-sample t-statistic value:', t , 'p-value:', p
 	#Decision rule: p-value
-	if p < alpha:
+	if p <= alpha:
 		print 'p-value is too small, null hypothesis is rejected. VIQ population mean value is NOT',NH[i]
 	else:
 		print 'P-value is greater than significance level',alpha,', test fails to reject the null hypothesis. VIQ population mean value can be', NH[i]
