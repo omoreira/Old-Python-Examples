@@ -1,8 +1,8 @@
 # 1samp_ttest_1.py : 
-#This an example based on http://www.scipy-lectures.org/packages/statistics/index.html#student-s-t-test-the-simplest-statistical-test 
-# Dataset Available at: http://www.scipy-lectures.org/_downloads/brain_size.csv 
 # See: https://www.gabormelli.com/RKB/One-Sample_t-Test_System
-# This performs One-Sample t-Test, for the Verbal IQ (VIQ) dataset of Null Hypotheses: 
+# Dataset Available at: http://www.scipy-lectures.org/_downloads/brain_size.csv 
+# Example(s): 
+# This performs an One-Sample t-Test, for the Verbal IQ (VIQ) dataset of Null Hypotheses: 
 #1. Verbal IQ mean value is 0
 #2. Verbal IQ mean value is 115
 #3. Verbal IQ mean value is 112
