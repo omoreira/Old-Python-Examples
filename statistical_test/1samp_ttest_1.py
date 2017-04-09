@@ -11,7 +11,7 @@ from scipy import stats
 # reading data file
 data = pandas.read_csv('http://www.scipy-lectures.org/_downloads/brain_size.csv', sep=';', na_values=".")
 #Null Hypotheses values
-NH=[0,115,200]
+NH=[10,115,200]
 #Significance level
 alpha = 0.05
 # One-Sample t-Test
