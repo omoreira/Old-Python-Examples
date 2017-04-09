@@ -3,7 +3,7 @@
 # Dataset Available at: http://www.scipy-lectures.org/_downloads/brain_size.csv 
 # Example(s): 
 # This performs an One-Sample t-Test, for the Verbal IQ (VIQ) dataset of Null Hypotheses: 
-#1. Verbal IQ mean value is 0
+#1. Verbal IQ mean value is 10
 #2. Verbal IQ mean value is 115
 #3. Verbal IQ mean value is 112
 import pandas
