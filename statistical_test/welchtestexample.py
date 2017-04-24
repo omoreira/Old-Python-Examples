@@ -12,7 +12,7 @@ data = pandas.read_csv('http://libguides.library.kent.edu/ld.php?content_id=1120
 #Defining mile run time for datasets: "Athelete"  and "Nonathelete"  
 athelete = data[data['Athlete'] == 1]['MileMinDur']
 nonathelete = data[data['Athlete'] == 0]['MileMinDur']
-# Converting dataset from  hh:mm:ss format to a numerical number miles seconds
+# Converting dataset from  hh:mm:ss format to a numerical number running time in seconds
 athelete=athelete.astype(str).reshape(athelete.size,1)
 nonathelete=nonathelete.astype(str).reshape(nonathelete.size,1)
 athelete=athelete[numpy.where(athelete!=[' '])]
