@@ -1,5 +1,5 @@
 # welchtestexample.py 
-#This program perform the following tests: 
+#This program performs the following tests: 
 # A) Barlett's and Levene's Test for testing homogeinity of variances;
 # B) and Welch's Test (Difference between Means test)
 # This is based on the dataset available at http://libguides.library.kent.edu/ld.php?content_id=11205378
