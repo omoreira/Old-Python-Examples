@@ -5,8 +5,6 @@
 # This is based on the dataset available at http://libguides.library.kent.edu/ld.php?content_id=11205378
 # This example test the null hypothesis that Athelete (group1) and Nonathelete (group 2) students 
 # mile run time are similar  
-# 
-
 from scipy import stats
 import pandas
 import numpy
