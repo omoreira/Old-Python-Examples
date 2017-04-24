@@ -48,6 +48,6 @@ print 'Welchs test statistic is', t, 'and p-value', p
 diffmean=abs(numpy.mean(athelete) - numpy.mean(nonathelete))
 # Perfoming decision rule test rejects or fails to reject null hypothesis based on p-value and significance level 
 if p <= alpha:
-	print 'p-value is too small, null hypothesis is rejected. Athelete and nonathelete students mean mile run times  are very difference. The difference between mean mile run times (point estimates) is',int(diffmean),'minutes and', int((diffmean -int(diffmean))/6.), 'seconds'  
+	print 'p-value is too small, null hypothesis is rejected. Athelete and nonathelete students mean mile run times  are very difference. The difference between mean mile run times (point estimates) is',int(diffmean),'minutes and', int((diffmean -int(diffmean))*60.), 'seconds'  
 else:
 	print 'P-value is greater than significance level',alpha,', Welchs test fails to reject the null hypothesis.  Athelete and nonathelete students mean mile run times are similar'
