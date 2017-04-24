@@ -3,7 +3,7 @@
 # A) Barlett's and Levene's Test for testing homogeinity of variances;
 # B) and Welch's Test (Difference between Means test)
 # This is based on the dataset available at http://libguides.library.kent.edu/ld.php?content_id=11205378
-# This example test the null hypothesis that Athelete (group1) and Nonathelete (group 2) students 
+# This example tests the null hypothesis that Athelete (group1) and Nonathelete (group 2) students 
 # mile run time are similar  
 from scipy import stats
 import pandas
