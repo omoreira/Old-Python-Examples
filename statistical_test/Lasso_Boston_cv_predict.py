@@ -10,7 +10,7 @@ boston = load_boston()
 # Adding a column of 1s for x0 (Regression Design Matrix)
 x = np.array([np.concatenate((v,[1])) for v in boston.data])
 y = boston.target
-# Create linear regression object with a lasso coefficient 0.3
+# Create linear regression object with a lasso coefficient 0.5
 lasso = Lasso(fit_intercept=True, alpha=0.5)
 # Train the model using the training set
 lasso.fit(x,y)
