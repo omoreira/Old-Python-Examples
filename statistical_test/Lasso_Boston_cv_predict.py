@@ -39,6 +39,6 @@ for train,test in kf:
     xval_err += np.dot(e,e)
 rmse_10cv = np.sqrt(xval_err/len(x))
 print('Method: Lasso Regression')
-print('RMSE on training: %.4f' %rmse_train)
+print('RMSE on training set: %.4f' %rmse_train)
 print('RMSE on 10-fold CV: %.4f' %rmse_10cv)
 
