@@ -15,7 +15,7 @@ x = boston.data
 # Creating target dataset
 y = boston.target
 # Create Huber Regression object 
-Hreg= HuberRegressor()
+Hreg= HuberRegressor(epsilon=1.0)
 # Fitting a linear model using the dataset
 Hreg.fit(x,y)
 # Y predicted values
@@ -37,7 +37,7 @@ pl.figure(1)
 pl.plot(yp, y,'ro')
 pl.plot(yp_cv, y,'bo', alpha=0.25, label='10-folds CV')
 pl.xlabel('predicted')
-pl.title('Huber Regression')
+pl.title('Huber Regression, epsilon=1.0')
 pl.ylabel('real')
 pl.grid(True)
 pl.show()
