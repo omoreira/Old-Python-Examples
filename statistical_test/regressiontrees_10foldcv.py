@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import ensemble
 from sklearn import datasets
+from sklearn import tree
 from sklearn.utils import shuffle
 from sklearn.metrics import mean_squared_error, explained_variance_score
 from sklearn.model_selection import cross_val_predict
@@ -22,8 +23,8 @@ for name,met in [
         ('Random Forest Regressor', ensemble.RandomForestRegressor(n_estimators=500, max_depth= 4, min_samples_split= 2)),
         ('Extra Trees Regressor', ensemble.ExtraTreesRegressor(n_estimators= 500, max_depth=4, min_samples_split=2)),
         ('Bagging Regressor', ensemble.BaggingRegressor(n_estimators= 500)),
-        ('AdaBoost Regressor', ensemble.AdaBoostRegressor(n_estimators= 500, learning_rate= 0.01, loss= 'linear'))
-        ]:
+        ('AdaBoost Regressor', ensemble.AdaBoostRegressor(n_estimators= 500, learning_rate= 0.01, loss= 'linear')),
+        ('Decision Tree Regressor', tree.DecisionTreeRegressor(max_depth= 4, min_samples_split= 2))]:
     regressormodel=met.fit(x,y)
     # Y predicted values
     yp =met.predict(x)
